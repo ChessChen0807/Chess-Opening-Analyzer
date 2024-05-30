@@ -10,6 +10,37 @@ app = Flask(__name__)
 def hello_world():
     return "chess server"
 
+
+trending_header_items = {
+    "image_url": "https://image.com/image",
+    "title": "Welcome to Chess Opening Analyzer!",
+    "description": "Where the Openings come hot and fresh!"
+}
+
+posts = [{
+    "title":
+    "Check out what Magnus Carlson did this weekend! (epic Chess tournament)",
+    "description":
+    "He's really cool.",
+    "image_url":
+    "https://images.daznservices.com/di/library/sporting_news/61/ca/magnus-carlsen-050320-getty-ftr_sx3g4xdqgtda1c6lb0o9mzpcc.jpg?t=-549273311&w=%7Bwidth%7D&quality=80",
+    "article_url":
+    "https://www.sportingnews.com/ca/other-sports/news/magnus-carlsen-finds-the-champion-toughness-that-could-prolong-his-peak-define-his-30s/11sq6u560ex3310x0y0ehw85oo"
+}, {
+    "title": "News on the latest Chess Championship candidate tournaments",
+    "description": "",
+    "image_url":
+    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FChessboard&psig=AOvVaw2AqyMvoABC_IL5HtDTloLm&ust=1717024523387000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCND-lvm8sYYDFQAAAAAdAAAAABAE",
+    "article_url": "https://new.uschess.org/upcoming-tournaments",
+}]
+
+@app.route('/get_trending_header_items')
+def get_trending_header_items():
+  return jsonify(trending_header_items)
+
+@app.route('/get_posts')
+def get_posts():
+  return jsonify(posts)
 @app.route('/get_opening_advice/<opening_name>')
 def return_openingadvice(opening_name):
     advice = get_opening_advice(opening_name)
