@@ -12,7 +12,7 @@ def hello_world():
 
 
 trending_header_items = {
-    "image_url": "https://image.com/image",
+    "image_url": "https://www.hdwallpaper.nu/wp-content/uploads/2017/03/chess-1.jpg",
     "title": "Welcome to Chess Opening Analyzer!",
     "description": "Where the Openings come hot and fresh!"
 }
@@ -30,7 +30,7 @@ posts = [{
     "title": "News on the latest Chess Championship candidate tournaments",
     "description": "",
     "image_url":
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FChessboard&psig=AOvVaw2AqyMvoABC_IL5HtDTloLm&ust=1717024523387000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCND-lvm8sYYDFQAAAAAdAAAAABAE",
+    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.stack.imgur.com%2FWgq49.png&f=1&nofb=1&ipt=8983dbd6f5bfea07019873131d959dd22b0ba865e13c304e42a596a00d740f2a&ipo=images",
     "article_url": "https://new.uschess.org/upcoming-tournaments",
 }]
 
